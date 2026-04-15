@@ -1,126 +1,294 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Privacy Policy and Terms &amp; Conditions</title>
   <style>
-    body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; padding:1em; }
+    :root {
+      --bg: #f4f6f9;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #4b5563;
+      --border: #e5e7eb;
+      --accent: #2563eb;
+      --accent-soft: #eef2ff;
+      --accent-text: #3730a3;
+      --shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background: linear-gradient(180deg, #f8fafc 0%, #f4f6f9 100%);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    .page {
+      max-width: 960px;
+      margin: 40px auto;
+      padding: 0 20px 40px;
+    }
+
+    .container {
+      background: var(--card);
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      border: 1px solid var(--border);
+    }
+
+    .hero {
+      padding: 36px 32px 24px;
+      background: linear-gradient(135deg, #ffffff 0%, #f8fbff 100%);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .hero h1 {
+      margin: 0;
+      font-size: 32px;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+    }
+
+    .hero p {
+      margin: 12px 0 0;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .content {
+      padding: 32px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: var(--accent-soft);
+      color: var(--accent-text);
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 600;
+      margin-bottom: 18px;
+    }
+
+    .section-title {
+      display: block;
+      font-size: 24px;
+      font-weight: 700;
+      margin: 0 0 12px;
+      color: var(--text);
+      letter-spacing: -0.01em;
+    }
+
+    .subsection-title {
+      display: block;
+      font-size: 18px;
+      font-weight: 700;
+      margin: 28px 0 10px;
+      color: var(--text);
+    }
+
+    p {
+      margin: 12px 0;
+      color: var(--muted);
+    }
+
+    ul {
+      margin: 12px 0 16px;
+      padding-left: 22px;
+      color: var(--muted);
+    }
+
+    li {
+      margin: 8px 0;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      word-break: break-word;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .block {
+      margin-top: 30px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+    }
+
+    .divider {
+      margin: 40px 0;
+      border: 0;
+      border-top: 1px solid var(--border);
+    }
+
+    .footer-note {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #6b7280;
+    }
+
+    @media (max-width: 640px) {
+      .page {
+        margin: 20px auto;
+        padding: 0 12px 24px;
+      }
+
+      .hero {
+        padding: 28px 20px 20px;
+      }
+
+      .hero h1 {
+        font-size: 26px;
+      }
+
+      .content {
+        padding: 24px 20px;
+      }
+
+      .section-title {
+        font-size: 22px;
+      }
+
+      .subsection-title {
+        font-size: 17px;
+      }
+    }
   </style>
 </head>
 <body>
-  <strong>Privacy Policy</strong>
-  <p>This Privacy Policy applies to all mobile applications (collectively, the “Applications”) published by FN on our Google Play Store page: <a href="https://play.google.com/store/apps/developer?id=FN" target="_blank" rel="noopener noreferrer">FN on Google Play</a>. These Applications may be Ad Supported and are provided “AS IS.”</p>
-  <br>
+  <div class="page">
+    <div class="container">
+      <div class="hero">
+        <h1>Privacy Policy and Terms &amp; Conditions</h1>
+        <p>Information for all mobile applications published by FN on Google Play.</p>
+      </div>
 
-  <strong>What information do the Applications obtain and how is it used?</strong>
-  <br><strong>User-Provided Information</strong>
-  <p>The Applications may acquire information you supply when you download, register, or use any of our Applications. Registration is not mandatory unless a specific feature requires it. If you choose to register, the Service Provider may use the information you provide to:</p>
-  <ul>
-    <li>Operate and personalize your experience across our Applications</li>
-    <li>Contact you with important notices, updates, or promotional materials</li>
-  </ul>
+      <div class="content">
+        <span class="section-title">Privacy Policy</span>
+        <div class="badge">Effective date: May 2, 2025</div>
 
-  <br><strong>Automatically Collected Information</strong>
-  <p>The Applications may automatically collect certain technical and usage information, including but not limited to:</p>
-  <ul>
-    <li>Device type and unique device identifier</li>
-    <li>IP address and mobile operating system</li>
-    <li>Browser type and version</li>
-    <li>Usage patterns and analytics data</li>
-  </ul>
+        <p>This Privacy Policy applies to all mobile applications (collectively, the “Applications”) published by FN on our Google Play Store page: <a href="https://play.google.com/store/apps/developer?id=FN" target="_blank" rel="noopener noreferrer">FN on Google Play</a>. These Applications may be Ad Supported and are provided “AS IS.”</p>
 
-  <br><strong>Location Information</strong>
-  <p>The Applications may collect approximate location data to enable features such as:</p>
-  <ul>
-    <li>Geolocation Services – personalized content, recommendations, and location-based features</li>
-    <li>Analytics and Improvements – aggregated, anonymized data to analyze usage trends and enhance performance</li>
-    <li>Third-Party Services – anonymized location data shared with external services to optimize our offerings</li>
-  </ul>
+        <strong class="subsection-title">What information do the Applications obtain and how is it used?</strong>
 
-  <br><strong>Do third parties see and/or have access to information obtained by the Applications?</strong>
-  <p>Only aggregated, anonymized data is shared with external services to help us improve our Applications. We may also disclose information:</p>
-  <ul>
-    <li>As required by law (e.g., subpoenas, legal processes)</li>
-    <li>To protect our rights, your safety, or the safety of others</li>
-    <li>With trusted service providers who adhere to this Privacy Policy</li>
-  </ul>
-  <p>The Applications use certain third-party services with their own privacy policies:</p>
-  <ul>
-    <li><a href="https://www.google.com/policies/privacy/" target="_blank" rel="noopener noreferrer">Google Play Services</a></li>
-    <li><a href="https://support.google.com/admob/answer/6128543?hl=en" target="_blank" rel="noopener noreferrer">AdMob</a></li>
-  </ul>
+        <strong class="subsection-title">User-Provided Information</strong>
+        <p>The Applications may acquire information you supply when you download, register, or use any of our Applications. Registration is not mandatory unless a specific feature requires it. If you choose to register, the Service Provider may use the information you provide to:</p>
+        <ul>
+          <li>Operate and personalize your experience across our Applications</li>
+          <li>Contact you with important notices, updates, or promotional materials</li>
+        </ul>
 
-  <br><strong>Opt-Out Rights</strong>
-  <p>You can stop all information collection by uninstalling any of our Applications using your device’s standard uninstall process.</p>
+        <strong class="subsection-title">Automatically Collected Information</strong>
+        <p>The Applications may automatically collect certain technical and usage information, including but not limited to:</p>
+        <ul>
+          <li>Device type and unique device identifier</li>
+          <li>IP address and mobile operating system</li>
+          <li>Browser type and version</li>
+          <li>Usage patterns and analytics data</li>
+        </ul>
 
-  <br><strong>Data Retention & Managing Your Information</strong>
-  <p>We retain User-Provided Information for as long as you use any of our Applications and for a reasonable time thereafter. Automatically Collected Information is retained for up to 24 months, after which it may be aggregated. To request deletion of your User-Provided Information, please contact us at <a href="mailto:fnfn67890@gmail.com">fnfn67890@gmail.com</a>.</p>
+        <strong class="subsection-title">Location Information</strong>
+        <p>The Applications may collect approximate location data to enable features such as:</p>
+        <ul>
+          <li>Geolocation Services – personalized content, recommendations, and location-based features</li>
+          <li>Analytics and Improvements – aggregated, anonymized data to analyze usage trends and enhance performance</li>
+          <li>Third-Party Services – anonymized location data shared with external services to optimize our offerings</li>
+        </ul>
 
-  <br><strong>Children</strong>
-  <p>We do not knowingly solicit or collect personal information from children under 13. If you believe a child under 13 has provided us with personal data, please contact us so we can delete it promptly.</p>
+        <strong class="subsection-title">Do third parties see and/or have access to information obtained by the Applications?</strong>
+        <p>Only aggregated, anonymized data is shared with external services to help us improve our Applications. We may also disclose information:</p>
+        <ul>
+          <li>As required by law (e.g., subpoenas, legal processes)</li>
+          <li>To protect our rights, your safety, or the safety of others</li>
+          <li>With trusted service providers who adhere to this Privacy Policy</li>
+        </ul>
 
-  <br><strong>Security</strong>
-  <p>We implement physical, electronic, and procedural safeguards to protect your information. However, no security measures are completely foolproof.</p>
+        <p>The Applications use certain third-party services with their own privacy policies:</p>
+        <ul>
+          <li><a href="https://www.google.com/policies/privacy/" target="_blank" rel="noopener noreferrer">Google Play Services</a></li>
+          <li><a href="https://support.google.com/admob/answer/6128543?hl=en" target="_blank" rel="noopener noreferrer">AdMob</a></li>
+        </ul>
 
-  <br><strong>Changes to This Privacy Policy</strong>
-  <p>We may update this Privacy Policy from time to time. We will post any changes on this page and update the “effective date” below. Continued use of our Applications after changes signifies your acceptance of the updated policy.</p>
+        <strong class="subsection-title">Opt-Out Rights</strong>
+        <p>You can stop all information collection by uninstalling any of our Applications using your device’s standard uninstall process.</p>
 
-  <br><p><em>Effective date: May 2, 2025</em></p>
+        <strong class="subsection-title">Data Retention &amp; Managing Your Information</strong>
+        <p>We retain User-Provided Information for as long as you use any of our Applications and for a reasonable time thereafter. Automatically Collected Information is retained for up to 24 months, after which it may be aggregated. To request deletion of your User-Provided Information, please contact us at <a href="mailto:fnfn67890@gmail.com">fnfn67890@gmail.com</a>.</p>
 
-  <br><strong>Your Consent</strong>
-  <p>By using any of our Applications, you consent to the collection and use of your information as described in this Privacy Policy.</p>
+        <strong class="subsection-title">Children</strong>
+        <p>We do not knowingly solicit or collect personal information from children under 13. If you believe a child under 13 has provided us with personal data, please contact us so we can delete it promptly.</p>
 
-  <br><strong>Contact Us</strong>
-  <p>If you have questions about this Privacy Policy or our practices, please contact FN at <a href="mailto:fnfn67890@gmail.com">fnfn67890@gmail.com</a>.</p>
-  
-  <strong>Terms &amp; Conditions</strong>
-  <p>These Terms &amp; Conditions apply to all mobile applications (collectively, the “Applications”) published by FN on our Google Play Store page: <a href="https://play.google.com/store/apps/developer?id=FN" target="_blank" rel="noopener noreferrer">FN on Google Play</a>. The Applications may be Ad Supported and are provided “AS IS.”</p>
-  <br>
+        <strong class="subsection-title">Security</strong>
+        <p>We implement physical, electronic, and procedural safeguards to protect your information. However, no security measures are completely foolproof.</p>
 
-  <p>By downloading or using any of the Applications, you agree to these Terms &amp; Conditions. Please read them carefully. Unauthorized copying, modification, or distribution of any Application, any part of an Application, or our trademarks is strictly prohibited. Attempting to reverse-engineer, decompile, or create derivative works is not permitted. All intellectual property rights in the Applications remain the property of the Service Provider.</p>
-  <br>
+        <strong class="subsection-title">Changes to This Privacy Policy</strong>
+        <p>We may update this Privacy Policy from time to time. We will post any changes on this page and update the “effective date” below. Continued use of our Applications after changes signifies your acceptance of the updated policy.</p>
 
-  <p>The Service Provider strives to make the Applications as useful and efficient as possible. We reserve the right to modify or discontinue any Application (or part thereof) at any time without notice. Any fees for paid features or services will be clearly communicated before charging you.</p>
-  <br>
+        <p><em>Effective date: May 2, 2025</em></p>
 
-  <p>The Applications may store and process personal data you provide in order to deliver features. You are responsible for maintaining the security of your device and your access credentials. Rooting or jailbreaking your device is strongly discouraged, as it may expose your device to security risks and cause the Applications to malfunction.</p>
-  <br>
+        <strong class="subsection-title">Your Consent</strong>
+        <p>By using any of our Applications, you consent to the collection and use of your information as described in this Privacy Policy.</p>
 
-  <div>
-    <p>The Applications use certain third-party services, each governed by its own Terms &amp; Conditions:</p>
-    <ul>
-      <li><a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer">Google Play Services</a></li>
-      <li><a href="https://developers.google.com/admob/terms" target="_blank" rel="noopener noreferrer">AdMob</a></li>
-    </ul>
+        <strong class="subsection-title">Contact Us</strong>
+        <p>If you have questions about this Privacy Policy or our practices, please contact FN at <a href="mailto:fnfn67890@gmail.com">fnfn67890@gmail.com</a>.</p>
+
+        <hr class="divider">
+
+        <span class="section-title">Terms &amp; Conditions</span>
+        <div class="badge">Effective date: May 2, 2025</div>
+
+        <p>These Terms &amp; Conditions apply to all mobile applications (collectively, the “Applications”) published by FN on our Google Play Store page: <a href="https://play.google.com/store/apps/developer?id=FN" target="_blank" rel="noopener noreferrer">FN on Google Play</a>. The Applications may be Ad Supported and are provided “AS IS.”</p>
+
+        <p>By downloading or using any of the Applications, you agree to these Terms &amp; Conditions. Please read them carefully. Unauthorized copying, modification, or distribution of any Application, any part of an Application, or our trademarks is strictly prohibited. Attempting to reverse-engineer, decompile, or create derivative works is not permitted. All intellectual property rights in the Applications remain the property of the Service Provider.</p>
+
+        <p>The Service Provider strives to make the Applications as useful and efficient as possible. We reserve the right to modify or discontinue any Application (or part thereof) at any time without notice. Any fees for paid features or services will be clearly communicated before charging you.</p>
+
+        <p>The Applications may store and process personal data you provide in order to deliver features. You are responsible for maintaining the security of your device and your access credentials. Rooting or jailbreaking your device is strongly discouraged, as it may expose your device to security risks and cause the Applications to malfunction.</p>
+
+        <div class="block">
+          <p>The Applications use certain third-party services, each governed by its own Terms &amp; Conditions:</p>
+          <ul>
+            <li><a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer">Google Play Services</a></li>
+            <li><a href="https://developers.google.com/admob/terms" target="_blank" rel="noopener noreferrer">AdMob</a></li>
+          </ul>
+        </div>
+
+        <p>Certain features of the Applications require an internet connection (Wi-Fi or cellular). We are not responsible for any data charges you may incur when using these features, including roaming fees when you use the Applications outside your home territory. If you are not the bill payer, you confirm that you have permission to incur such charges.</p>
+
+        <p>We cannot guarantee uninterrupted operation of the Applications. It is your responsibility to ensure your device has sufficient battery life and connectivity. We accept no liability for any loss or damage you experience from device or network issues.</p>
+
+        <p>While we aim to keep the Applications up to date and functioning correctly, we rely on third-party providers for certain information and services. We do not accept liability for any loss or damage you may experience due to third-party services or reliance on features provided by third parties.</p>
+
+        <strong class="subsection-title">Bug Reports &amp; Defects</strong>
+        <p>Despite our best efforts, the Applications may contain bugs or defects. You agree that the Service Provider shall have no liability for any loss or damage arising from such bugs or defects. We encourage you to report any issues via the contact information below so we can address them promptly.</p>
+
+        <p>The Service Provider may release updates to the Applications to maintain compatibility with new OS versions or to add features. You agree to accept such updates when available. We reserve the right to discontinue any Application at any time, at which point your rights under these Terms &amp; Conditions will cease and you must stop using and delete the Application.</p>
+
+        <strong class="subsection-title">Changes to These Terms &amp; Conditions</strong>
+        <p>We may update these Terms &amp; Conditions from time to time. Any changes will be posted on this page and will become effective immediately upon posting. You are advised to review this page regularly. Continued use of any Application after changes signifies your acceptance of the updated terms.</p>
+
+        <p><em>Effective date: May 2, 2025</em></p>
+
+        <strong class="subsection-title">Contact Us</strong>
+        <p>If you have any questions, suggestions, or bug reports about these Terms &amp; Conditions or the Applications, please contact FN at <a href="mailto:fnfn67890@gmail.com">fnfn67890@gmail.com</a>.</p>
+
+        <p class="footer-note">FN Apps</p>
+      </div>
+    </div>
   </div>
-  <br>
-
-  <p>Certain features of the Applications require an internet connection (Wi-Fi or cellular). We are not responsible for any data charges you may incur when using these features, including roaming fees when you use the Applications outside your home territory. If you are not the bill payer, you confirm that you have permission to incur such charges.</p>
-  <br>
-
-  <p>We cannot guarantee uninterrupted operation of the Applications. It is your responsibility to ensure your device has sufficient battery life and connectivity. We accept no liability for any loss or damage you experience from device or network issues.</p>
-  <br>
-
-  <p>While we aim to keep the Applications up to date and functioning correctly, we rely on third-party providers for certain information and services. We do not accept liability for any loss or damage you may experience due to third-party services or reliance on features provided by third parties.</p>
-  <br>
-
-  <strong>Bug Reports &amp; Defects</strong>
-  <p>Despite our best efforts, the Applications may contain bugs or defects. You agree that the Service Provider shall have no liability for any loss or damage arising from such bugs or defects. We encourage you to report any issues via the contact information below so we can address them promptly.</p>
-  <br>
-
-  <p>The Service Provider may release updates to the Applications to maintain compatibility with new OS versions or to add features. You agree to accept such updates when available. We reserve the right to discontinue any Application at any time, at which point your rights under these Terms &amp; Conditions will cease and you must stop using and delete the Application.</p>
-  <br>
-
-  <strong>Changes to These Terms &amp; Conditions</strong>
-  <p>We may update these Terms &amp; Conditions from time to time. Any changes will be posted on this page and will become effective immediately upon posting. You are advised to review this page regularly. Continued use of any Application after changes signifies your acceptance of the updated terms.</p>
-  <br>
-
-  <p><em>Effective date: May 2, 2025</em></p>
-  <br>
-
-  <strong>Contact Us</strong>
-  <p>If you have any questions, suggestions, or bug reports about these Terms &amp; Conditions or the Applications, please contact FN at <a href="mailto:fnfn67890@gmail.com">fnfn67890@gmail.com</a>.</p>
-
 </body>
 </html>
